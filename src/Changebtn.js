@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
-class Changebtn extends Component {
+class list extends Component {
 	constructor(props){
 		super(props);
 		this.state = {btn: "on"}
