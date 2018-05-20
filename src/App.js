@@ -19,7 +19,7 @@ class App extends Component {
           Insert text
         </p>
   
-        <Listsubmit numbers={this.state.items}/>
+        <Listsubmit />
       
       </div>
     );
