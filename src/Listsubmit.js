@@ -7,7 +7,7 @@ class Listsubmit extends Component {
   
   constructor(props) {
 	  super(props);
-	  this.state = {listitems : props.numbers};
+	  this.state = {listitems : [], anyValue: ''};
 	  
   }
   add =() => {
@@ -27,17 +27,17 @@ class Listsubmit extends Component {
 	  );
     
     return (
-    <Row>
-      <Col md={{size: 4,offset:4}}>
-        <InputGroup>
-          <Input placeholder="Insert text here." onChange={this.inputtext}/>
-          <InputGroupAddon addonType="append">
-            <Button color="danger" onClick={this.add}>submit</Button>
-          </InputGroupAddon>
-        </InputGroup>
-  	    <ListGroup>{listItems}</ListGroup>
-      </Col>
-    </Row>
+      <Row>
+        <Col md={{size: 4,offset:4}}>
+          <InputGroup>
+            <Input placeholder="Insert text here." onChange={this.inputtext}/>
+            <InputGroupAddon addonType="append">
+              <Button color="danger" onClick={this.add}>submit</Button>
+            </InputGroupAddon>
+          </InputGroup>
+    	    <ListGroup>{listItems}</ListGroup>
+        </Col>
+      </Row>
 	  );
   }
 }
